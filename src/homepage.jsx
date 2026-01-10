@@ -282,7 +282,7 @@ export default function TalkousMedia() {
           </div>
 
           {/* Center Logo */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center">
+          <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center ">
             <img src={logo} alt="logo" className="w-22 h-22" />
           </div>
 
@@ -746,7 +746,7 @@ export default function TalkousMedia() {
       <footer className="border-t border-white bg-[#131313] py-6 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <div className="w-28 h-28 rounded-full border-2 border-white/20 bg-black flex items-center justify-center">
+            <div className="w-28 h-28 rounded-full border-2 border-white/20 bg-black flex items-center justify-center hover:border-purple-500 transition-all duration-500 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]">
               <div className="flex items-center gap-1">
                 <img src={logo} alt="logo" className="w-24 h-24 object-contain" />
               </div>
