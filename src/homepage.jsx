@@ -393,7 +393,7 @@ export default function TalkousMedia() {
       {/* Content wrapper */}
       <div className="relative z-10">
         {/* Navigation */}
-        <nav className="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
+        <nav className="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-1 border-white/40 shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 md:py-4">
             <div className="flex items-center justify-between">
               {/* Mobile Menu Button */}
