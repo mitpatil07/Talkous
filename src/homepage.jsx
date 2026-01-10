@@ -302,12 +302,13 @@ export default function TalkousMedia() {
       {/* Hero Section */}
       <section className="pt-30 pb-12 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gray-600 mb-8">
-            <Sparkles className="w-5 h-5" />
-            <span className="text-gray-200">800M+ Organic Views Generated</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-400 mb-6">
+            <Sparkles className="w-4 h-4" />
+            <span className="text-gray-200 text-sm">800M+ Organic Views Generated</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+
+          <h1 className="text-4xl md:text-[3.4rem] font-semibold mb-6 font-sans leading-tight">
             Turn Your <span className="bg-gradient-to-r from-purple-500 to-pink-400 bg-clip-text text-transparent">Podcast</span> Into a{' '}
             <span className="bg-gradient-to-r from-purple-500 to-pink-400 bg-clip-text text-transparent">Growth</span>
             <br />
@@ -722,11 +723,16 @@ export default function TalkousMedia() {
 
         <section id="calendly-section" className="py-12 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
-              <div className="calendly-inline-widget" data-url="https://calendly.com/talkousmedia/talkous-media" style={{ minWidth: '320px', height: '700px' }}></div>
+            <div className="rounded-2xl overflow-hidden">
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/talkousmedia/talkous-media"
+                style={{ minWidth: "320px", height: "700px" }}
+              ></div>
             </div>
           </div>
         </section>
+
       </section>
 
 
