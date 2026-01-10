@@ -331,7 +331,7 @@ export default function TalkousMedia() {
             </a>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden shadow-2xl max-w-4xl mx-auto border-2 border-white/40">
+          <div className="relative rounded-lg overflow-hidden shadow-2xl max-w-4xl mx-auto border-2 border-white/40 hover:border-purple-500 transition-all duration-500 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)]">
             <div className="aspect-video bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
               <iframe
                 className="w-full h-full"
@@ -479,7 +479,7 @@ export default function TalkousMedia() {
             <button
               onClick={() => setCurrentSlide(Math.max(0, currentSlide - 1))}
               disabled={currentSlide === 0}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-all disabled:opacity-30 disabled:cursor-not-allowed z-10"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed z-10 hover:scale-110"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -491,15 +491,17 @@ export default function TalkousMedia() {
               >
                 {slides.map((slide, idx) => (
                   <div key={idx} className="min-w-full px-2">
-                    <div className="bg-[#1d1d1d] border-2 border-white/20 p-6 rounded-xl">
+                    <div className="bg-[#1d1d1d] border-2 border-white/20 p-6 rounded-xl transition-all duration-500 hover:border-purple-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)]">
                       <div className="flex items-center gap-4 mb-6">
-                        {slide.icon}
+                        <div className="transition-transform duration-500 hover:scale-110 hover:rotate-12">
+                          {slide.icon}
+                        </div>
                         <h3 className="text-2xl font-bold">{slide.title}</h3>
                       </div>
                       <p className="text-gray-400 mb-6">{slide.subtitle}</p>
                       <div className="space-y-3 mb-6">
                         {slide.points.map((point, pointIdx) => (
-                          <div key={pointIdx} className="flex items-center gap-3">
+                          <div key={pointIdx} className="flex items-center gap-3 transition-all duration-300 hover:translate-x-2">
                             <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                             <span className="text-gray-300">{point}</span>
                           </div>
@@ -515,7 +517,7 @@ export default function TalkousMedia() {
             <button
               onClick={() => setCurrentSlide(Math.min(slides.length - 1, currentSlide + 1))}
               disabled={currentSlide === slides.length - 1}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-all disabled:opacity-30 disabled:cursor-not-allowed z-10"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed z-10 hover:scale-110"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
@@ -526,8 +528,9 @@ export default function TalkousMedia() {
               <button
                 key={idx}
                 onClick={() => setCurrentSlide(idx)}
-                className={`h-2 rounded-full transition-all duration-300 ${idx === currentSlide ? 'bg-white w-8' : 'bg-gray-600 w-2'
-                  }`}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  idx === currentSlide ? 'bg-white w-8' : 'bg-gray-600 w-2 hover:bg-gray-400'
+                }`}
               />
             ))}
           </div>
@@ -546,17 +549,17 @@ export default function TalkousMedia() {
                 >
                   {testimonials.map((testimonial, idx) => (
                     <div key={idx} className="min-w-full px-2">
-                      <div className="bg-[#1d1d1d] border-2 border-white/20 p-6 rounded-xl">
+                      <div className="bg-[#1d1d1d] border-2 border-white/20 p-6 rounded-xl transition-all duration-500 hover:border-purple-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)]">
                         <div className="flex gap-1 mb-6">
                           {[...Array(5)].map((_, i) => (
-                            <Star key={i} className="w-4 h-4 fill-white text-white" />
+                            <Star key={i} className="w-4 h-4 fill-white text-white transition-transform duration-300 hover:scale-125" />
                           ))}
                         </div>
                         <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                           {testimonial.text}
                         </p>
                         <div className="flex items-center gap-4">
-                          <div className="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center font-bold text-xl">
+                          <div className="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center font-bold text-xl transition-transform duration-300 hover:scale-110">
                             {testimonial.initial}
                           </div>
                           <div>
@@ -576,8 +579,9 @@ export default function TalkousMedia() {
                 <button
                   key={idx}
                   onClick={() => setCurrentTestimonial(idx)}
-                  className={`h-2 rounded-full transition-all duration-300 ${idx === currentTestimonial ? 'bg-white w-8' : 'bg-gray-600 w-2'
-                    }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    idx === currentTestimonial ? 'bg-white w-8' : 'bg-gray-600 w-2 hover:bg-gray-400'
+                  }`}
                 />
               ))}
             </div>
@@ -605,12 +609,10 @@ export default function TalkousMedia() {
           <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
             {founders.map((founder, index) => (
               <div key={index} className="relative group cursor-pointer">
-                {/* Background box that appears on hover - bottom and right only */}
+                {/* Background box that appears on hover */}
                 <div className="absolute inset-0 bg-white rounded-3xl translate-x-0 translate-y-0 group-hover:translate-x-3 group-hover:translate-y-3 transition-all duration-400 ease-out"></div>
 
-
-
-                {/* Main card - Horizontal layout */}
+                {/* Main card */}
                 <div className="relative bg-zinc-900 rounded-2xl p-6 border border-zinc-800 h-full flex flex-col">
                   <div className="flex items-start gap-6">
                     {/* Profile Image */}
@@ -618,7 +620,7 @@ export default function TalkousMedia() {
                       <img
                         src={founder.image}
                         alt={founder.name}
-                        className="w-28 h-28 rounded-full object-cover border-4 border-zinc-800"
+                        className="w-28 h-28 rounded-full object-cover border-4 border-zinc-800 transition-transform duration-300 group-hover:scale-110"
                       />
                     </div>
 
@@ -633,19 +635,19 @@ export default function TalkousMedia() {
                       <div className="flex gap-2 mb-4">
                         <a
                           href={founder.linkedin}
-                          className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-colors"
+                          className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-all duration-300 hover:scale-110"
                         >
                           <Linkedin size={16} className="text-gray-300" />
                         </a>
                         <a
                           href={founder.instagram}
-                          className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-colors"
+                          className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-all duration-300 hover:scale-110"
                         >
                           <Instagram size={16} className="text-gray-300" />
                         </a>
                         <a
                           href={founder.email}
-                          className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-colors"
+                          className="w-9 h-9 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-all duration-300 hover:scale-110"
                         >
                           <Mail size={16} className="text-gray-300" />
                         </a>
@@ -653,7 +655,7 @@ export default function TalkousMedia() {
                     </div>
                   </div>
 
-                  {/* Description - Full width below */}
+                  {/* Description */}
                   <p className="text-gray-400 text-sm leading-relaxed mt-4">
                     {founder.description}
                   </p>
@@ -675,23 +677,26 @@ export default function TalkousMedia() {
 
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="border border-white/20 rounded-2xl overflow-hidden transition-all duration-500">
+              <div key={idx} className="border border-white/20 rounded-2xl overflow-hidden transition-all duration-500 hover:border-purple-500">
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? -1 : idx)}
                   className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-white/5 transition-all duration-300"
                 >
-                  <span className="font-semibold font-mano text-lg pr-4">{faq.question}</span>
+                  <span className="font-semibold font-mono text-lg pr-4">{faq.question}</span>
                   <ChevronDown
-                    className={`w-6 h-6 flex-shrink-0 transition-transform duration-500 ease-out ${openFaq === idx ? 'rotate-180' : 'rotate-0'
-                      }`}
+                    className={`w-6 h-6 flex-shrink-0 transition-transform duration-500 ease-out ${
+                      openFaq === idx ? 'rotate-180' : 'rotate-0'
+                    }`}
                   />
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-700 ease-in-out ${openFaq === idx ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
+                  className={`overflow-hidden transition-all duration-700 ease-in-out ${
+                    openFaq === idx ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}
                 >
-                  <div className={`px-8 pb-6 transition-all duration-500 ${openFaq === idx ? 'translate-y-0' : '-translate-y-4'
-                    }`}>
+                  <div className={`px-8 pb-6 transition-all duration-500 ${
+                    openFaq === idx ? 'translate-y-0' : '-translate-y-4'
+                  }`}>
                     <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
