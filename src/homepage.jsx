@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../public/logo.png';
+import mitesh from "./assets/Mitesh.JPG";
+import yash from "./assets/Yash.png";
+
 import { Sparkles, Mic, ArrowRight, Rocket, Scissors, Film, FileText, Image, Upload, Headphones, ChevronLeft, ChevronRight, ChevronDown, Star, DollarSign, Check, ZapIcon, Brain, Search, EarthIcon, Linkedin, Instagram, Mail, Menu, X } from 'lucide-react';
 
 export default function TalkousMedia() {
@@ -47,18 +50,18 @@ export default function TalkousMedia() {
   const founders = [
     {
       name: "Yash Chaprana",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      image: yash,
       description: "is a content-driven entrepreneur specializing in AI-powered systems, creator guidance, and strategic content development. He works with businesses and creators to build authority through podcasting and social media, focusing on clarity, positioning, and execution that drive long-term growth.",
-      linkedin: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/yashchaprana/",
+      instagram: "https://www.instagram.com/yashchapranaa/reels/",
       email: "mailto:yash@talkousmedia.com"
     },
     {
       name: "Mitesh Patil",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+      image: mitesh,
       description: "is a TEDx speaker and entrepreneur who works closely with founders and creators on content ideation and online authority. His focus is simple: turning clear thinking into content that builds trust, credibility, and real influence over time.",
-      linkedin: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/mitesh-patil-25a214390/",
+      instagram: "https://www.instagram.com/mitesh_9207/",
       email: "mailto:mitesh@talkousmedia.com"
     }
   ];
