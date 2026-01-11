@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import logo from '../public/logo.png';
 import mitesh from "./assets/Mitesh.JPG";
 import yash from "./assets/Yash.png";
+import img1 from "./assets/Client Success_1.jpg";
+import img2 from "./assets/Client Success_2.jpg";
+import img3 from "./assets/Client Success_3.jpg";
+
 
 import { Sparkles, Mic, ArrowRight, Rocket, Scissors, Film, FileText, Image, Upload, Headphones, ChevronLeft, ChevronRight, ChevronDown, Star, DollarSign, Check, ZapIcon, Brain, Search, EarthIcon, Linkedin, Instagram, Mail, Menu, X } from 'lucide-react';
 
 export default function TalkousMedia() {
+  const [hoveredCard, setHoveredCard] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [openFaq, setOpenFaq] = useState(0);
@@ -573,6 +578,250 @@ export default function TalkousMedia() {
           </div>
         </section>
 
+
+
+
+        <section className="py-12 md:py-20 px-4 sm:px-6 relative overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 -left-48 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse"></div>
+
+            {/* Floating particles */}
+            <div className="absolute top-20 left-10 w-2 h-2 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
+            <div className="absolute top-40 right-20 w-3 h-3 bg-pink-400 rounded-full animate-ping opacity-40"></div>
+            <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-purple-300 rounded-full animate-pulse opacity-50"></div>
+            <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-pink-300 rounded-full animate-bounce opacity-70"></div>
+          </div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="text-center mb-12 md:mb-16 animate-fade-in">
+              <div className="inline-block mb-4 animate-slide-down">
+                <span className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full text-purple-400 text-sm font-semibold backdrop-blur-sm">
+                  <Sparkles className="inline w-4 h-4 mr-2 animate-spin-slow" />
+                  SUCCESS STORIES
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 animate-slide-up">
+                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent animate-gradient">
+                  Talkous Media
+                </span>
+              </h2>
+              <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-6 animate-fade-in-delay">
+                Real creators. Real results. Real growth.
+              </p>
+              <div className="flex justify-center animate-bounce-in">
+                <div className="group relative inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full overflow-hidden cursor-pointer transform transition-all duration-300 ">
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0"></div>
+                  <span className="relative text-lg md:text-xl font-bold text-white z-10">
+                    Let's walk through a few stories
+                  </span>
+                  <ArrowRight className="relative w-6 h-6 text-white z-10 group-hover:translate-x-2 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
+                </div>
+              </div>
+            </div>
+
+            <style jsx>{`
+          @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          @keyframes slide-down {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+          }
+          @keyframes slide-up {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+          }
+          @keyframes bounce-in {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+          }
+          @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+          @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+          }
+          @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+          }
+          @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+          }
+          
+          .animate-fade-in {
+            animation: fade-in 0.8s ease-out;
+          }
+          .animate-fade-in-delay {
+            animation: fade-in 1s ease-out 0.2s backwards;
+          }
+          .animate-slide-down {
+            animation: slide-down 0.6s ease-out;
+          }
+          .animate-slide-up {
+            animation: slide-up 0.8s ease-out;
+          }
+          .animate-bounce-in {
+            animation: bounce-in 1s ease-out 0.4s backwards;
+          }
+          .animate-spin-slow {
+            animation: spin-slow 3s linear infinite;
+          }
+          .animate-gradient {
+            background-size: 200% auto;
+            animation: gradient 3s ease infinite;
+          }
+          .animate-float {
+            animation: float 3s ease-in-out infinite;
+          }
+        `}</style>
+
+<div className="grid grid-cols-1 gap-6 md:gap-8 max-w-[1400px] mx-auto">
+              {/* Card 1 - Sonia Shenoy - Full Width Horizontal Layout */}
+              <div
+                className="group relative rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/60 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/30 animate-fade-in cursor-pointer"
+                style={{ backgroundColor: 'rgb(24, 25, 26)' }}
+                onMouseEnter={() => setHoveredCard(0)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="flex flex-col sm:flex-row h-full min-h-[420px]">
+                  {/* Image Section - Large display */}
+                  <div className="relative w-full sm:w-[560px] lg:w-[680px] flex-shrink-0 h-96 sm:h-auto">
+                    <img
+                      src={img1}
+                      alt="Sonia Shenoy"
+                      className="w-full h-full object-contain object-center"
+                      style={{ backgroundColor: 'rgb(24, 25, 26)' }}
+                    />
+                    
+                    {/* Shimmer on hover */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-transparent animate-shimmer"></div>
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
+                    <div className="inline-flex items-center gap-2 mb-3">
+                      <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                      <span className="text-xs font-semibold text-purple-400 uppercase tracking-wider">Featured</span>
+                    </div>
+                    
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300">
+                      Sonia Shenoy
+                    </h3>
+                    <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-4 max-w-2xl">
+                      Business Journalist & Podcaster driving multi-platform growth across YouTube, Instagram, and LinkedIn.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2 - Samuel Leeds - Full Width Horizontal Layout */}
+              <div
+                className="group relative rounded-2xl overflow-hidden border border-gray-700/50 hover:border-pink-500/60 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/30 animate-fade-in cursor-pointer"
+                style={{ backgroundColor: 'rgb(24, 25, 26)', animationDelay: '0.15s' }}
+                onMouseEnter={() => setHoveredCard(1)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="flex flex-col sm:flex-row h-full min-h-[420px]">
+                  {/* Image Section - Large display */}
+                  <div className="relative w-full sm:w-[560px] lg:w-[680px] flex-shrink-0 h-96 sm:h-auto">
+                    <img
+                      src={img2}
+                      alt="Samuel Leeds"
+                      className="w-full h-full object-contain object-center"
+                      style={{ backgroundColor: 'rgb(24, 25, 26)' }}
+                    />
+                    
+                    {/* Shimmer on hover */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                      <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-transparent animate-shimmer"></div>
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
+                    <div className="inline-flex items-center gap-2 mb-3">
+                      <div className="w-12 h-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full"></div>
+                      <span className="text-xs font-semibold text-pink-400 uppercase tracking-wider">Featured</span>
+                    </div>
+                    
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors duration-300">
+                      Samuel Leeds
+                    </h3>
+                    <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-4 max-w-2xl">
+                      Property Investor & Educator hosting high-impact podcasts with industry leaders driving massive reach.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3 - Damien & Timeyin - Full Width Horizontal Layout */}
+              <div
+                className="group relative rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/60 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/30 animate-fade-in cursor-pointer"
+                style={{ backgroundColor: 'rgb(24, 25, 26)', animationDelay: '0.3s' }}
+                onMouseEnter={() => setHoveredCard(2)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="flex flex-col sm:flex-row h-full min-h-[420px]">
+                  {/* Image Section - Large display */}
+                  <div className="relative w-full sm:w-[560px] lg:w-[680px] flex-shrink-0 h-96 sm:h-auto">
+                    <img
+                      src={img3}
+                      alt="Making Money Podcast"
+                      className="w-full h-full object-contain object-center"
+                      style={{ backgroundColor: 'rgb(24, 25, 26)' }}
+                    />
+                    
+                    {/* Shimmer on hover */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-transparent animate-shimmer"></div>
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className="flex-1 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
+                    <div className="inline-flex items-center gap-2 mb-3">
+                      <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                      <span className="text-xs font-semibold text-purple-400 uppercase tracking-wider">Featured</span>
+                    </div>
+                    
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300">
+                      Damien & Timeyin
+                    </h3>
+                    <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-4 max-w-2xl">
+                      Making Money Podcast hosts building wealth education authority with engaging personal finance content that resonates with audiences worldwide.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style jsx>{`
+          @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+          }
+          
+          .animate-shimmer {
+            animation: shimmer 2s infinite;
+          }
+        `}</style>
+          </div>
+        </section>
+
+
+
         {/* Features Carousel */}
         <section id='results' className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-b from-gray-900/40 via-gray-900/30 to-transparent backdrop-blur-sm">
           <div className="max-w-6xl mx-auto">
@@ -762,11 +1011,6 @@ export default function TalkousMedia() {
           </div>
         </section>
 
-
-
-
-        {/* Features Carousel */}
-        <section id='results' className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-b from-gray-900/40 via-gray-900/30 to-transparent backdrop-blur-sm"></section>
 
         {/* FAQ Section */}
         <section id="faq" className="py-12 md:py-16 px-4 sm:px-6">
