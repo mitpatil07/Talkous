@@ -427,8 +427,8 @@ export default function TalkousMedia() {
               <div className="hidden md:flex items-center gap-8 font-mono text-base">
                 <button onClick={() => scrollToSection("services")} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Services</button>
                 <button onClick={() => scrollToSection("results")} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Results</button>
-                <button onClick={() => scrollToSection("faq")} className="text-gray-400 hover:text-white transition-colors cursor-pointer">FAQ</button>
                 <button onClick={() => scrollToSection("successstory")}  className="text-gray-400 hover:text-white transition-colors cursor-pointer">Success Stories</button>
+                <button onClick={() => scrollToSection("faq")} className="text-gray-400 hover:text-white transition-colors cursor-pointer">FAQ</button>
               </div>
 
               {/* Center Logo */}
@@ -592,8 +592,6 @@ export default function TalkousMedia() {
             </div>
           </div>
         </section>
-
-
 
         {/*SUCCESS STORIES Section */}
         <section id='successstory' className="py-12 md:py-20 px-4 sm:px-6 relative overflow-hidden">
@@ -838,8 +836,6 @@ export default function TalkousMedia() {
         `}</style>
           </div>
         </section>
-
-
 
         {/* Features Carousel */}
         <section id='results' className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-b from-gray-900/40 via-gray-900/30 to-transparent backdrop-blur-sm">
