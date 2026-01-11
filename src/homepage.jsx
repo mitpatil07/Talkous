@@ -193,10 +193,10 @@ export default function TalkousMedia() {
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         {/* Base gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950/20 to-black"></div>
-        
+
         {/* Animated mesh grid */}
         <div className="absolute inset-0 opacity-30">
-          <div 
+          <div
             className="absolute inset-0 animate-mesh-move"
             style={{
               backgroundImage: `
@@ -210,49 +210,49 @@ export default function TalkousMedia() {
             }}
           ></div>
         </div>
-        
+
         {/* Gradient orbs with mesh intersection effect */}
         <div className="absolute top-[10%] left-[10%] w-[500px] h-[500px]">
           <div className="w-full h-full bg-gradient-to-br from-purple-600/20 via-purple-500/10 to-transparent rounded-full blur-3xl animate-float-mesh"></div>
         </div>
-        
+
         <div className="absolute bottom-[15%] right-[10%] w-[450px] h-[450px]">
           <div className="w-full h-full bg-gradient-to-tl from-pink-600/20 via-pink-500/10 to-transparent rounded-full blur-3xl animate-float-mesh-reverse"></div>
         </div>
-        
+
         <div className="absolute top-[50%] left-[45%] w-[350px] h-[350px]">
           <div className="w-full h-full bg-gradient-to-br from-fuchsia-600/15 via-fuchsia-500/8 to-transparent rounded-full blur-3xl animate-float-mesh-slow"></div>
         </div>
-        
+
         {/* Diagonal gradient beams */}
         <div className="absolute top-0 left-0 w-full h-full opacity-20">
           <div className="absolute top-[-50%] left-[20%] w-[400px] h-[200%] bg-gradient-to-b from-transparent via-purple-500/20 to-transparent rotate-45 animate-beam-slide"></div>
           <div className="absolute top-[-50%] right-[20%] w-[350px] h-[200%] bg-gradient-to-b from-transparent via-pink-500/15 to-transparent -rotate-45 animate-beam-slide-reverse"></div>
         </div>
-        
+
         {/* Hexagon pattern overlay */}
         <div className="absolute inset-0 opacity-10">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="hexagons" x="0" y="0" width="100" height="87" patternUnits="userSpaceOnUse">
-                <path d="M50 0L93.3 25L93.3 62L50 87L6.7 62L6.7 25z" fill="none" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="0.5"/>
+                <path d="M50 0L93.3 25L93.3 62L50 87L6.7 62L6.7 25z" fill="none" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="0.5" />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#hexagons)" className="animate-hex-drift"/>
+            <rect width="100%" height="100%" fill="url(#hexagons)" className="animate-hex-drift" />
           </svg>
         </div>
-        
+
         {/* Floating light particles */}
         <div className="absolute top-[20%] left-[30%] w-2 h-2 bg-purple-400/60 rounded-full animate-float-up blur-sm"></div>
         <div className="absolute top-[60%] right-[35%] w-3 h-3 bg-pink-400/60 rounded-full animate-float-up blur-sm" style={{ animationDelay: '2s', animationDuration: '8s' }}></div>
         <div className="absolute bottom-[40%] left-[50%] w-2 h-2 bg-fuchsia-400/60 rounded-full animate-float-up blur-sm" style={{ animationDelay: '4s', animationDuration: '10s' }}></div>
         <div className="absolute top-[75%] right-[20%] w-3 h-3 bg-purple-300/60 rounded-full animate-float-up blur-sm" style={{ animationDelay: '1s', animationDuration: '9s' }}></div>
-        
+
         {/* Radial gradient spotlight effect */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(168,85,247,0.15),transparent_50%)] animate-pulse-subtle"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(236,72,153,0.15),transparent_50%)] animate-pulse-subtle" style={{ animationDelay: '3s' }}></div>
       </div>
-      
+
       <style jsx>{`
         @keyframes mesh-move {
           0% {
@@ -413,7 +413,7 @@ export default function TalkousMedia() {
 
               {/* Center Logo */}
               <div className="absolute left-1/2 -translate-x-1/2 flex items-center">
-                <img src={logo} alt="logo" className="w-12 h-12 md:w-16 md:h-16 rounded-full" />
+                <img src={logo} alt="logo" className="w-22 h-22 md:w-26 md:h-26 rounded-full" />
               </div>
 
               {/* CTA Button */}
@@ -635,9 +635,8 @@ export default function TalkousMedia() {
                 <button
                   key={idx}
                   onClick={() => setCurrentSlide(idx)}
-                  className={`h-1.5 md:h-2 rounded-full transition-all duration-300 ${
-                    idx === currentSlide ? 'bg-white w-6 md:w-8' : 'bg-gray-600 w-1.5 md:w-2 hover:bg-gray-400'
-                  }`}
+                  className={`h-1.5 md:h-2 rounded-full transition-all duration-300 ${idx === currentSlide ? 'bg-white w-6 md:w-8' : 'bg-gray-600 w-1.5 md:w-2 hover:bg-gray-400'
+                    }`}
                 />
               ))}
             </div>
@@ -686,9 +685,8 @@ export default function TalkousMedia() {
                   <button
                     key={idx}
                     onClick={() => setCurrentTestimonial(idx)}
-                    className={`h-1.5 md:h-2 rounded-full transition-all duration-300 ${
-                      idx === currentTestimonial ? 'bg-white w-6 md:w-8' : 'bg-gray-600 w-1.5 md:w-2 hover:bg-gray-400'
-                    }`}
+                    className={`h-1.5 md:h-2 rounded-full transition-all duration-300 ${idx === currentTestimonial ? 'bg-white w-6 md:w-8' : 'bg-gray-600 w-1.5 md:w-2 hover:bg-gray-400'
+                      }`}
                   />
                 ))}
               </div>
@@ -764,6 +762,171 @@ export default function TalkousMedia() {
           </div>
         </section>
 
+
+        {/* Results Showcase */}
+        <section className="py-12 md:py-16 px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8">
+                Talkous Media
+              </h2>
+              <div className="inline-flex items-center gap-3 md:gap-4 px-6 py-4 md:px-8 md:py-5 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full border-2 border-white/20 hover:border-purple-500 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] cursor-pointer group">
+                <span className="text-lg md:text-xl lg:text-2xl font-semibold">Let's walk through a few stories</span>
+                <ArrowRight className="w-6 h-6 md:w-7 md:h-7 group-hover:translate-x-2 transition-transform duration-300" />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {/* Sonia Shenoy */}
+              <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-white/20 rounded-3xl overflow-hidden hover:border-purple-500 transition-all duration-500 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] group">
+                <div className="p-6 md:p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-purple-500/50 overflow-hidden flex-shrink-0 group-hover:border-purple-500 transition-colors">
+                      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="Sonia Shenoy" className="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold">Sonia Shenoy</h3>
+                      <p className="text-gray-400 text-sm md:text-base">Business Journalist</p>
+                    </div>
+                  </div>
+
+                  <div className="aspect-video rounded-xl overflow-hidden mb-4 border border-white/10">
+                    <img src="/api/placeholder/600/338" alt="Sonia Shenoy Results" className="w-full h-full object-cover" />
+                  </div>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Views (28 days)</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl md:text-2xl font-bold">1.26M</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+425K</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Subscribers</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl md:text-2xl font-bold">9K</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+4K</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Est. Revenue</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg md:text-xl font-bold text-purple-400">$845-$1K</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+$279</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-sm text-gray-400">
+                    <Check className="w-4 h-4 text-green-400" />
+                    <span>Multi-platform presence optimized</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Samuel Leeds */}
+              <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-white/20 rounded-3xl overflow-hidden hover:border-purple-500 transition-all duration-500 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] group">
+                <div className="p-6 md:p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-purple-500/50 overflow-hidden flex-shrink-0 group-hover:border-purple-500 transition-colors">
+                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Samuel Leeds" className="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold">Samuel Leeds</h3>
+                      <p className="text-gray-400 text-sm md:text-base">Property Investor</p>
+                    </div>
+                  </div>
+
+                  <div className="aspect-video rounded-xl overflow-hidden mb-4 border border-white/10">
+                    <img src="/api/placeholder/600/338" alt="Samuel Leeds Results" className="w-full h-full object-cover" />
+                  </div>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Views (28 days)</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl md:text-2xl font-bold">5.68M</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+428K</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Subscribers</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl md:text-2xl font-bold">4K</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+4K</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Est. Revenue</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg md:text-xl font-bold text-purple-400">$2.1K-$5.8K</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+$279</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-sm text-gray-400">
+                    <Check className="w-4 h-4 text-green-400" />
+                    <span>High-authority guest podcast features</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Making Money Podcast */}
+              <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-white/20 rounded-3xl overflow-hidden hover:border-purple-500 transition-all duration-500 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] group md:col-span-2 lg:col-span-1">
+                <div className="p-6 md:p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-purple-500/50 overflow-hidden flex-shrink-0 group-hover:border-purple-500 transition-colors">
+                      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=200&fit=crop" alt="Making Money Podcast" className="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold">Damien & Timeyin</h3>
+                      <p className="text-gray-400 text-sm md:text-base">Making Money Podcast</p>
+                    </div>
+                  </div>
+
+                  <div className="aspect-video rounded-xl overflow-hidden mb-4 border border-white/10">
+                    <img src="/api/placeholder/600/338" alt="Making Money Podcast Results" className="w-full h-full object-cover" />
+                  </div>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Views (28 days)</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl md:text-2xl font-bold">6.49M</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+2.7M</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Subscribers</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl md:text-2xl font-bold">50K</span>
+                        <span className="text-green-400 text-xs md:text-sm font-semibold bg-green-400/10 px-2 py-1 rounded">+40K</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between p-3 bg-black/40 rounded-lg border border-white/10">
+                      <span className="text-gray-400 text-sm">Est. Revenue</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg md:text-xl font-bold text-purple-400">$2.3-$5.2K</span>
+                        <span className="text-red-400 text-xs md:text-sm font-semibold bg-red-400/10 px-2 py-1 rounded">-$302</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-sm text-gray-400">
+                    <Check className="w-4 h-4 text-green-400" />
+                    <span>2K-5K monthly podcast listeners</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Carousel */}
+        <section id='results' className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-b from-gray-900/40 via-gray-900/30 to-transparent backdrop-blur-sm"></section>
+
         {/* FAQ Section */}
         <section id="faq" className="py-12 md:py-16 px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
@@ -782,19 +945,16 @@ export default function TalkousMedia() {
                   >
                     <span className="font-semibold font-mono text-sm md:text-lg pr-3 md:pr-4">{faq.question}</span>
                     <ChevronDown
-                      className={`w-5 h-5 md:w-6 md:h-6 flex-shrink-0 transition-transform duration-500 ease-out ${
-                        openFaq === idx ? 'rotate-180' : 'rotate-0'
-                      }`}
+                      className={`w-5 h-5 md:w-6 md:h-6 flex-shrink-0 transition-transform duration-500 ease-out ${openFaq === idx ? 'rotate-180' : 'rotate-0'
+                        }`}
                     />
                   </button>
                   <div
-                    className={`overflow-hidden transition-all duration-700 ease-in-out ${
-                      openFaq === idx ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
+                    className={`overflow-hidden transition-all duration-700 ease-in-out ${openFaq === idx ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                      }`}
                   >
-                    <div className={`px-4 pb-4 md:px-8 md:pb-6 transition-all duration-500 ${
-                      openFaq === idx ? 'translate-y-0' : '-translate-y-4'
-                    }`}>
+                    <div className={`px-4 pb-4 md:px-8 md:pb-6 transition-all duration-500 ${openFaq === idx ? 'translate-y-0' : '-translate-y-4'
+                      }`}>
                       <p className="text-gray-400 leading-relaxed text-sm md:text-base">{faq.answer}</p>
                     </div>
                   </div>
