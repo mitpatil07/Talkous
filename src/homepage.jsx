@@ -16,7 +16,21 @@ export default function TalkousMedia() {
   const [openFaq, setOpenFaq] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+  
+    const navbarHeight = 90; // adjust to your nav height
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - navbarHeight;
+  
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
 
+  
   React.useEffect(() => {
     const slideInterval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -411,9 +425,10 @@ export default function TalkousMedia() {
 
               {/* Desktop Nav Links */}
               <div className="hidden md:flex items-center gap-8 font-mono text-base">
-                <a href="#services" className="text-gray-400 hover:text-white transition-colors">Services</a>
-                <a href="#results" className="text-gray-400 hover:text-white transition-colors">Results</a>
-                <a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                <button onClick={() => scrollToSection("services")} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Services</button>
+                <button onClick={() => scrollToSection("results")} className="text-gray-400 hover:text-white transition-colors cursor-pointer">Results</button>
+                <button onClick={() => scrollToSection("faq")} className="text-gray-400 hover:text-white transition-colors cursor-pointer">FAQ</button>
+                <button onClick={() => scrollToSection("successstory")}  className="text-gray-400 hover:text-white transition-colors cursor-pointer">Success Stories</button>
               </div>
 
               {/* Center Logo */}
@@ -580,8 +595,8 @@ export default function TalkousMedia() {
 
 
 
-
-        <section className="py-12 md:py-20 px-4 sm:px-6 relative overflow-hidden">
+        {/*SUCCESS STORIES Section */}
+        <section id='successstory' className="py-12 md:py-20 px-4 sm:px-6 relative overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 -left-48 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse"></div>
