@@ -597,22 +597,26 @@ export default function TalkousMedia() {
             <div className="text-center mb-12 md:mb-16 animate-fade-in">
               <div className="inline-block mb-4 animate-slide-down">
                 <span className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full text-purple-400 text-sm font-semibold backdrop-blur-sm">
-                  <Sparkles className="inline w-4 h-4 mr-2 animate-spin-slow" />
+                  <Sparkles className="inline w-4 h-4 mr-2" />
                   SUCCESS STORIES
                 </span>
               </div>
-              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 animate-slide-up">
-                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent animate-gradient">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-2 md:mb-4 animate-slide-up tracking-tight">
+                <span className="relative font-serif bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent animate-gradient">
+                  <span className="absolute inset-0 text-transparent stroke-[1px] stroke-purple-400 blur-[1px]">
+                    Talkous Media
+                  </span>
                   Talkous Media
                 </span>
               </h2>
-              <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-6 animate-fade-in-delay">
+
+              <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-3 animate-fade-in-delay">
                 Real creators. Real results. Real growth.
               </p>
               <div className="flex justify-center animate-bounce-in">
-                <div className="group relative inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full overflow-hidden cursor-pointer transform transition-all duration-300 ">
+                <div className="group relative inline-flex items-center gap-3 px-8 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full overflow-hidden cursor-pointer transform transition-all duration-300 ">
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0"></div>
-                  <span className="relative text-lg md:text-xl font-bold text-white z-10">
+                  <span className="relative text-lg md:text-xl font-bold text-white z-10 font-serif">
                     Let's walk through a few stories
                   </span>
                   <ArrowRight className="relative w-6 h-6 text-white z-10 group-hover:translate-x-2 transition-transform duration-300" />
@@ -683,7 +687,7 @@ export default function TalkousMedia() {
           }
         `}</style>
 
-<div className="grid grid-cols-1 gap-6 md:gap-8 max-w-[1400px] mx-auto">
+            <div className="grid grid-cols-1 gap-6 md:gap-8 max-w-[1400px] mx-auto">
               {/* Card 1 - Sonia Shenoy - Full Width Horizontal Layout */}
               <div
                 className="group relative rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/60 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/30 animate-fade-in cursor-pointer"
@@ -700,7 +704,7 @@ export default function TalkousMedia() {
                       className="w-full h-full object-contain object-center"
                       style={{ backgroundColor: 'rgb(24, 25, 26)' }}
                     />
-                    
+
                     {/* Shimmer on hover */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-transparent animate-shimmer"></div>
@@ -713,7 +717,7 @@ export default function TalkousMedia() {
                       <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
                       <span className="text-xs font-semibold text-purple-400 uppercase tracking-wider">Featured</span>
                     </div>
-                    
+
                     <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300">
                       Sonia Shenoy
                     </h3>
@@ -740,7 +744,7 @@ export default function TalkousMedia() {
                       className="w-full h-full object-contain object-center"
                       style={{ backgroundColor: 'rgb(24, 25, 26)' }}
                     />
-                    
+
                     {/* Shimmer on hover */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-transparent animate-shimmer"></div>
@@ -753,14 +757,14 @@ export default function TalkousMedia() {
                       <div className="w-12 h-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full"></div>
                       <span className="text-xs font-semibold text-pink-400 uppercase tracking-wider">Featured</span>
                     </div>
-                    
+
                     <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors duration-300">
                       Samuel Leeds
                     </h3>
                     <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-4 max-w-2xl">
                       Property Investor & Educator hosting high-impact podcasts with industry leaders driving massive reach.
                     </p>
-                    
+
                   </div>
                 </div>
               </div>
@@ -781,7 +785,7 @@ export default function TalkousMedia() {
                       className="w-full h-full object-contain object-center"
                       style={{ backgroundColor: 'rgb(24, 25, 26)' }}
                     />
-                    
+
                     {/* Shimmer on hover */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-transparent animate-shimmer"></div>
@@ -794,14 +798,14 @@ export default function TalkousMedia() {
                       <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
                       <span className="text-xs font-semibold text-purple-400 uppercase tracking-wider">Featured</span>
                     </div>
-                    
+
                     <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300">
                       Damien & Timeyin
                     </h3>
                     <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-4 max-w-2xl">
                       Making Money Podcast hosts building wealth education authority with engaging personal finance content that resonates with audiences worldwide.
                     </p>
-                    
+
                   </div>
                 </div>
               </div>
