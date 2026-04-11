@@ -959,7 +959,7 @@ export default function TalkousMedia() {
         </section>
 
         {/* Founders Section */}
-        <section className="bg-gradient-to-b from-transparent via-gray-900/20 to-transparent backdrop-blur-sm text-white py-12 md:py-20 px-4 sm:px-6">
+  {/*      <section className="bg-gradient-to-b from-transparent via-gray-900/20 to-transparent backdrop-blur-sm text-white py-12 md:py-20 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-mono mb-4 md:mb-6 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
@@ -1025,7 +1025,7 @@ export default function TalkousMedia() {
             </div>
           </div>
         </section>
-
+*/}
 
         {/* FAQ Section */}
         <section id="faq" className="py-12 md:py-16 px-4 sm:px-6">
