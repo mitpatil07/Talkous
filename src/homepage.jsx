@@ -15,6 +15,7 @@ export default function TalkousMedia() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [openFaq, setOpenFaq] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const showSuccessStories = false;
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -594,6 +595,7 @@ export default function TalkousMedia() {
         </section>
 
         {/*SUCCESS STORIES Section */}
+        {showSuccessStories && (
         <section id='successstory' className="py-12 md:py-20 px-4 sm:px-6 relative overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 -left-48 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -836,6 +838,7 @@ export default function TalkousMedia() {
         `}</style>
           </div>
         </section>
+        )}
 
         {/* Features Carousel */}
         <section id='results' className="py-12 md:py-16 px-4 sm:px-6 bg-gradient-to-b from-gray-900/40 via-gray-900/30 to-transparent backdrop-blur-sm">
